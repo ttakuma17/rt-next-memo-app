@@ -2,9 +2,9 @@
 export default {
   colors: {
     theme: {
-      main: '#6AA43B',
-      sub: '#456D3E',
-      background: '#FFFBF5',
+      main: '#EEEEEE',
+      sub: '#FFFFFF',
+      background: '#FFFFFF',
     },
     text: {
       headline: '#494C4F',
