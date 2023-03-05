@@ -1,13 +1,22 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Flex, Center } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 
-import AppPageTitle from '@/components/common/AppPageTitle'
+import { MemoCard } from '../components/common/MemoCard'
+import { Footer } from '../components/layout/Footer'
+import { Header } from '../components/layout/Header'
 
 const Home: NextPage = () => {
   return (
-    <Box minH='100vh' backgroundColor='theme.main'>
-      <AppPageTitle />
-    </Box>
+    <Flex minH='100vh' backgroundColor='theme.main' flexFlow={'column'}>
+      <Header />
+      <Flex justifyContent={'center'} alignItems={'center'} flex={1}>
+        <MemoCard />
+        <MemoCard />
+        <MemoCard />
+        <MemoCard />
+      </Flex>
+      <Footer />
+    </Flex>
   )
 }
 
